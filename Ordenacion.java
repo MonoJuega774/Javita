@@ -10,25 +10,75 @@ class Ordenacion {
         System.out.println("Ingrese el último número");
         int numero3 = scanner.nextInt();
 
-        int mayor1 = Math.max(numero1, numero2);
-        int mayor2 = Math.max(mayor1, numero3);
+        int caso = 0;
 
-        switch (mayor2) {
-            case mayor1:
-                if (numero3 >= numero2) {
-                    System.out.println("El número mayor es: "+ mayor1);
-                    System.out.println("El número del medio es: "+ numero3);
-                    System.out.println("El número menor es: "+ numero2);
+        if (numero1 == numero2) {
+            System.out.println("Uno de los valores es inválido o está repetido");
+        } else {
+            if (numero1 == numero3) {
+                System.out.println("Uno de los valores es inválido o está repetido");
+            } else {
+                System.out.println("Uno de los valores es inválido o está repetido");
+            }
+        }
+        if (numero1 > numero2 & numero2 > numero3) {
+            caso = 1;
+        } else {
+            if (numero1 > numero2 & numero2 < numero3 & numero1 > numero3) {
+                caso = 2;
+            } else {
+                if (numero2 > numero1 & numero1 > numero3) {
+                    caso = 3;
+                } else {
+                    if (numero2 > numero1 & numero1 < numero3 & numero2 > numero3) {
+                        caso = 4;
+                    } else {
+                        if (numero3 > numero1 & numero1 > numero2) {
+                            caso = 5;
+                        } else {
+                            if (numero3 > numero1 & numero1 < numero2 & numero3 > numero2) {
+                                caso = 6;
+                            }
+                        }
+                    }
                 }
-                else {
-                    System.out.println("El número mayor es: "+ mayor1);
-                    System.out.println("El número del medio es: "+ numero2);
-                    System.out.println("El número menor es: "+ numero3);
-                }
+            }
+        }
+
+        switch (caso) {
+            case 1:
+                System.out.println("El número mayor es: " + numero1);
+                System.out.println("El número del medio es: " + numero2);
+                System.out.println("El número menor es: " + numero3);
                 break;
-        
+            case 2:
+                System.out.println("El número mayor es: " + numero1);
+                System.out.println("El número del medio es: " + numero3);
+                System.out.println("El número menor es: " + numero2);
+                break;
+            case 3:
+                System.out.println("El número mayor es: "+ numero2);
+                System.out.println("El número del medio es: "+numero1);
+                System.out.println("El número menor es: "+ numero3);
+                break;
+            case 4:
+                System.out.println("El número mayor es: "+ numero2);
+                System.out.println("El número del medio es: "+numero3);
+                System.out.println("El número menor es: "+ numero1);
+                break;
+            case 5:
+                System.out.println("El número mayor es: "+ numero3);
+                System.out.println("El número del medio es: "+numero1);
+                System.out.println("El número menor es: "+ numero2);
+                break;
+            case 6:
+                System.out.println("El número mayor es: "+ numero3);
+                System.out.println("El número del medio es: "+numero2);
+                System.out.println("El número menor es: "+ numero1);
+                break;
             default:
                 break;
         }
+
     }
 }
