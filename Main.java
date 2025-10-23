@@ -11,6 +11,7 @@ public class Main {
             System.out.println("[1] Ejercicio: Número es par o impar");
             System.out.println("[2] Ejercicio: Número mayor");
             System.out.println("[3] Ejercicio: Ordenación de números");
+            System.out.println("[4] Ejercicio: Número es múltiplo de otro");
             System.out.println("[0] Salir");
             System.out.println("--------------------------");
             System.out.println("Opción: ");
@@ -30,6 +31,10 @@ public class Main {
             case 3:
                 Ordenacion ordenacion = new Ordenacion();
                 ordenacion.ejer3();
+                break;
+            case 4:
+                Multiplo multiplo = new Multiplo();
+                multiplo.ejer4();
                 break;
             case 0:
                 condicion = false;
