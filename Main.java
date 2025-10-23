@@ -12,37 +12,42 @@ public class Main {
             System.out.println("[2] Ejercicio: Número mayor");
             System.out.println("[3] Ejercicio: Ordenación de números");
             System.out.println("[4] Ejercicio: Número es múltiplo de otro");
+            System.out.println("[5] Ejercicio: Año bisiesto");
             System.out.println("[0] Salir");
             System.out.println("--------------------------");
             System.out.println("Opción: ");
             opcion = tec.nextInt();
 
             switch (opcion) {
-            // Par o impar
-            case 1:
-                Par par = new Par();
-                par.ejer1();
-                break;
-            // Número mayor???
-            case 2:
-                Mayor mayor = new Mayor();
-                mayor.ejer2();
-                break;
-            case 3:
-                Ordenacion ordenacion = new Ordenacion();
-                ordenacion.ejer3();
-                break;
-            case 4:
-                Multiplo multiplo = new Multiplo();
-                multiplo.ejer4();
-                break;
-            case 0:
-                condicion = false;
-                System.out.println("Saliste");
-                break;
-            default:
-            System.out.println("Opción inválida, intente nuevamente");
-        }
+                // Par o impar
+                case 1:
+                    Par par = new Par();
+                    par.ejer1();
+                    break;
+                // Número mayor???
+                case 2:
+                    Mayor mayor = new Mayor();
+                    mayor.ejer2();
+                    break;
+                case 3:
+                    Ordenacion ordenacion = new Ordenacion();
+                    ordenacion.ejer3();
+                    break;
+                case 4:
+                    Multiplo multiplo = new Multiplo();
+                    multiplo.ejer4();
+                    break;
+                case 5:
+                    Bisiesto bisiesto = new Bisiesto();
+                    bisiesto.ejer5();
+                    break;
+                case 0:
+                    condicion = false;
+                    System.out.println("Saliste");
+                    break;
+                default:
+                    System.out.println("Opción inválida, intente nuevamente");
+            }
 
         }
     }
