@@ -12,14 +12,8 @@ class Ordenacion {
 
         int caso = 0;
 
-        if (numero1 == numero2) {
+        if (numero1 == numero2 || numero1 == numero3 || numero2 == numero3) {
             System.out.println("Uno de los valores es inválido o está repetido");
-        } else {
-            if (numero1 == numero3) {
-                System.out.println("Uno de los valores es inválido o está repetido");
-            } else {
-                System.out.println("Uno de los valores es inválido o está repetido");
-            }
         }
         if (numero1 > numero2 & numero2 > numero3) {
             caso = 1;
