@@ -10,8 +10,7 @@ class Multiplo {
 
         if (numero2 % numero1 == 0) {
             System.out.println("El número: " + numero2 + ", es múltiplo de: " + numero1);
-        }
-        else {
+        } else {
             System.out.println("El número: " + numero2 + ", no es múltiplo de: " + numero1);
         }
     }
