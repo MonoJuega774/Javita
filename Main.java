@@ -13,6 +13,7 @@ public class Main {
             System.out.println("[3] Ejercicio: Ordenación de números");
             System.out.println("[4] Ejercicio: Número es múltiplo de otro");
             System.out.println("[5] Ejercicio: Año bisiesto");
+            System.out.println("[6] Ejercicio: Nomina sencilla");
             System.out.println("[0] Salir");
             System.out.println("--------------------------");
             System.out.println("Opción: ");
@@ -40,6 +41,10 @@ public class Main {
                 case 5:
                     Bisiesto bisiesto = new Bisiesto();
                     bisiesto.ejer5();
+                    break;
+                case 6:
+                    Nomina nomina = new Nomina();
+                    nomina.ejer6();
                     break;
                 case 0:
                     condicion = false;
