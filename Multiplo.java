@@ -8,10 +8,15 @@ class Multiplo {
         System.out.println("Ingrese segundo número: ");
         int numero2 = scanner.nextInt();
 
-        if (numero2 % numero1 == 0) {
+        if (numero1 == 0) {
+            System.out.println("El valor del primer número no puede ser 0");
+        }
+        else {
+            if (numero2 % numero1 == 0) {
             System.out.println("El número: " + numero2 + ", es múltiplo de: " + numero1);
         } else {
             System.out.println("El número: " + numero2 + ", no es múltiplo de: " + numero1);
+        }
         }
     }
 }
