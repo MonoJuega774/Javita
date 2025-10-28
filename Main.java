@@ -14,6 +14,7 @@ public class Main {
             System.out.println("[4] Ejercicio: Número es múltiplo de otro");
             System.out.println("[5] Ejercicio: Año bisiesto");
             System.out.println("[6] Ejercicio: Nomina sencilla");
+            System.out.println("[7] Ejercicio: Descuentos");
             System.out.println("[0] Salir");
             System.out.println("--------------------------");
             System.out.println("Opción: ");
