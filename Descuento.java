@@ -10,7 +10,7 @@ class Descuento {
         total = escritorios * valor_escritorio;
 
         if (escritorios <= 0) {
-            System.out.println("No puede comprar 0 o menos escritorios");
+            System.out.println("No puede comprar menos de 1 escritorio");
         } else {
             if (escritorios < 5) {
                 descuento = total * 0.10;
